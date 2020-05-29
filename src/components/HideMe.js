@@ -19,7 +19,9 @@ class HideMe extends Component {
     render() {
         let { children } = this.props;
         return (
-            <p onClick={this.handleClick}>{!this.state.clicked ? { children } : ''}</p>
+            <p onClick={this.handleClick}>
+                {!this.state.clicked ? children : ''}
+            </p>
         )
     }
 

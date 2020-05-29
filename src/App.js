@@ -35,7 +35,9 @@ function App() {
             <CountBy step={5} />
           </Route>
 
-          <Route exact path="/hide-me" component={HideMe}>Blah Blah Blah</Route>
+          <Route exact path="/hide-me">
+            <HideMe>Blah Blah</HideMe>
+          </Route>
 
           <FourOhFour />
 
