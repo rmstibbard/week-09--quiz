@@ -11,13 +11,17 @@ class CountBy extends Component {
 
     handleClick() {
         this.setState({
-            result: this.state.result + this.props.step,
+            result: +this.state.result + +this.props.step,
         });
     }
 
     render() {
         return (
-            <p onClick={this.handleClick}>{this.state.result}</p>
+            <>
+                <h1>Counting up by {this.props.step}</h1>
+                <button onClick={this.handleClick}>Click to Count Up</button>
+                <h2>{this.state.result}</h2>
+            </>
         )
     }
 

@@ -36,6 +36,10 @@ function App() {
             <CountBy step={5} />
           </Route>
 
+          <Route path="/count-by/:step" render={({ match }) => (
+            <CountBy step={match.params.step} />
+          )} />
+
           <Route exact path="/hide-me">
             <HideMe>Blah Blah</HideMe>
           </Route>
