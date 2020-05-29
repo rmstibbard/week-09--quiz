@@ -5,7 +5,7 @@ class Multiplier extends Component {
     render() {
         let result = this.props.x * this.props.y;
         return (
-            <p>{result}</p>
+            <h1>{this.props.x} times  {this.props.y} = {result}</h1>
         )
     }
 

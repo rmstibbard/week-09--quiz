@@ -26,9 +26,12 @@ function App() {
 
           <Route exact path="/" component={Home} />
 
-          <Route exact path="/multiplier">
-            <Multiplier x={5} y={7} />
-          </Route>
+          <Route path="/multiplier/:x/:y" render={({ match }) => (
+            <Multiplier
+              x={match.params.x}
+              y={match.params.y}
+            />
+          )} />
 
           <Route exact path="/even-clicks" component={EvenClicks} />
 
@@ -47,10 +50,6 @@ function App() {
           <Route path="/minimum-length/:minLength" render={({ match }) => (
             <MinimumLength minLength={match.params.minLength} />
           )} />
-
-          <Route exact path="/minimum-length">
-            <MinimumLength length={30} />
-          </Route>
 
           <FourOhFour />
 
