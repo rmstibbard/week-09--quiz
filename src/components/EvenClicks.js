@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Button } from 'react-bootstrap';
+import Button from 'react-bootstrap/Button';
 
 class EvenClicks extends Component {
 
@@ -18,7 +18,6 @@ class EvenClicks extends Component {
     }
 
     render() {
-
         return (
             <Button
                 variant="primary"
