@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import Button from 'react-bootstrap/Button';
 
 class CountBy extends Component {
 
@@ -18,8 +19,12 @@ class CountBy extends Component {
         return (
             <>
                 <h1>Counting up by {this.props.step}</h1>
-                <button onClick={this.handleClick}>Click to Count Up</button>
-                <h2>{this.state.result}</h2>
+                <Button
+                    variant="primary"
+                    onClick={this.handleClick}>
+                    Click to Count Up
+                </Button>
+                <h2>... and the answer is {this.state.result}</h2>
             </>
         )
     }
