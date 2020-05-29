@@ -9,31 +9,26 @@ class MinimumLength extends Component {
 
     handleChange(e) {
         this.setState({ input: e.currentTarget.value });
-
-        let length = this.state.input.length;
-
-        if (length < 30) {
-            this.setState({ message: "Too short!" })
-        }
-        if (length >= 30) {
-            this.setState({ message: "OK!" })
-        }
-
     }
 
     render() {
-        return (
+        let inputLength = this.state.input.length;
+        let message = "OK";
 
+        if (inputLength < this.props.minLength) {
+            message = "Too short!"
+        }
+
+        return (
             <div>
-                <h2>Length Checker</h2>
+                <h2>Length Checker - Minimum Length  {this.props.minLength}</h2>
                 <label>Input: </label>
                 <input
                     onChange={this.handleChange}
                     value={this.state.input}
                 />
-                <p>{this.state.message}</p>
-            </div>
-
+                <p>{message}</p>
+            </div >
         );
     }
 }

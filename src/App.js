@@ -44,6 +44,10 @@ function App() {
             <HideMe>Blah Blah</HideMe>
           </Route>
 
+          <Route path="/minimum-length/:minLength" render={({ match }) => (
+            <MinimumLength minLength={match.params.minLength} />
+          )} />
+
           <Route exact path="/minimum-length">
             <MinimumLength length={30} />
           </Route>
