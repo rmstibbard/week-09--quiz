@@ -20,7 +20,7 @@ class HideMe extends Component {
         let { children } = this.props;
         return (
             <p onClick={this.handleClick}>
-                {!this.state.clicked ? children : ''}
+                {!this.state.clicked ? <p onClick={this.handleClick}>{children}</p> : null}
             </p>
         )
     }

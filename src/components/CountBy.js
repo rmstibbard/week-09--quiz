@@ -24,7 +24,7 @@ class CountBy extends Component {
                     onClick={this.handleClick}>
                     Click to Count Up
                 </Button>
-                <h2>... and the answer is {this.state.result}</h2>
+                <h2>... and the answer is {this.state.result} !!</h2>
             </>
         )
     }
