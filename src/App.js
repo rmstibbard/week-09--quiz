@@ -13,6 +13,7 @@ import EvenClicks from './components/EvenClicks';
 import Fragment from './components/Fragment';
 import CountBy from './components/CountBy';
 import HideMe from './components/HideMe';
+import MinimumLength from './components/MinimumLength';
 
 import FourOhFour from './components/FourOhFour';
 
@@ -37,6 +38,10 @@ function App() {
 
           <Route exact path="/hide-me">
             <HideMe>Blah Blah</HideMe>
+          </Route>
+
+          <Route exact path="/minimum-length">
+            <MinimumLength length={30} />
           </Route>
 
           <FourOhFour />

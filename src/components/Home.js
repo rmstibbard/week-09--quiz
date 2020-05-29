@@ -11,6 +11,7 @@ class Home extends Component {
                 <p><a href="even-clicks">Even clicks</a></p>
                 <p><a href="count-by">Count By</a></p>
                 <p><a href="hide-me">Hide Me</a></p>
+                <p><a href="minimum-length">Minimum Length</a></p>
             </>
         )
     }
