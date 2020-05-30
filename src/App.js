@@ -13,6 +13,7 @@ import EvenClicks from './components/EvenClicks';
 import CountBy from './components/CountBy';
 import HideMe from './components/HideMe';
 import MinimumLength from './components/MinimumLength';
+import DatePicker from './components/DatePicker';
 
 import FourOhFour from './components/FourOhFour';
 
@@ -47,6 +48,9 @@ function App() {
         <Route path="/minimum-length/:minLength" render={({ match }) => (
           <MinimumLength minLength={match.params.minLength} />
         )} />
+
+        <Route exact path="/date-picker" component={DatePicker} />
+
 
         <FourOhFour />
 

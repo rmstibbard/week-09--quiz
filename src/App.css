@@ -36,3 +36,18 @@
     transform: rotate(360deg);
   }
 }
+
+.length-of-stay {
+  margin-top: 25px;
+  width: 420px;
+  margin-left: 30px;
+}
+
+.dates {
+  display: flex;
+  flex-direction: row;
+}
+
+.date-picker {
+  padding: 30px;
+}
